@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sidebar{
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background: #1e1e1e;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border-left: 5px solid rgb(166, 228, 208);
+  color: rgb(166, 228, 208);
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+#home-section{
+  background-image: url('https://i.ibb.co/3z8c5KT/5397402-music-recording-keys-key-board-musicican-playing-musician-keyboard-light-piano-concert-spotl.jpg');
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+#check:checked ~ #home-section{
+  margin-left: 240px;
+}
+#body-details{
+  color: white;
+ /* padding:250px 370px; */
+  padding-top: 17%;
+  padding-right: 85px;
+ text-align: end;
+ font-size: 35px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: bolder;
+}
+
+#b-title{
+  color:rgb(166, 228, 208);
+  font-style: italic;
+}
+
+.sub-title{
+  font-size: 18px;
+  margin-top: 7px;
+
+  color: rgb(240, 235, 235);
+}
+#Information-section{
+  background-color: rgb(27, 27, 27);
+  padding-top: 10px;
+  padding-bottom: 50px;
+
+}
+.about-us{
+  text-align: center;
+  padding-top: 60px;
+  color: rgb(166, 228, 208);
+ 
+}
+#Information-section p{
+  color: gray;
+  padding: 25px;
+  border: 2px solid rgb(59, 58, 58);
+  margin: 15px;
+  border-radius: 10px;
+  
+}
+#Information-section h3{
+  font-size: 35px;
+}
+.d-flex{
+  display: flex;
+}
+#Information-section h4{
+
+  color:white ;
+}
+#guide-section h3{
+  text-align: center;
+  font-size: 35px;
+}
+#guide-section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(223, 241, 236);;
+}
+#guide-section h4{
+  text-align: center;
+  font-style:italic;
+  color: rgb(20, 1, 1);
+  margin-top: 5px;
+}
+#guide-section h5{
+  font-size: 25px;
+  padding-top: 15px;
+  margin-left: 15px;
+}
+.d-flex{
+  display: flex;
+}
+.guide{
+  padding: 10px;
+  margin:10px ;
+  border: 2px solid gray;
+  width: 640px;
+  border-radius: 10px;
+  background-color: black;
+  color: whitesmoke;
+
+}
+.color{
+  color: rgb(166, 228, 208);
+}
+/* contact us */
+
+.container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+/* contact form css */
+
+
+#contact-section{
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url('https://i.ibb.co/BLkY1kP/black-home-phone-black-background-3d-illustration-291814-842.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100% ;
+  padding:15px 0px;
+}
+
+#contact-section .container h2{
+  text-align: center;
+   text-decoration: underline;
+    /* text-decoration-color:red; */
+    text-underline-position: under;
+    color: rgb(238, 235, 235);
+    letter-spacing: 2px;
+    padding-top: 10px;
+    
+}
+#contact-section{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contact-section h2,p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.contact-info{
+  margin-top: 35px;
+}
+
+
+
+#contact-section .container p{
+  text-align: center; 
+  width: 70%; 
+  margin-left: auto;
+   margin-right: auto; 
+   padding-bottom: 3%;
+   color: #fff;
+   letter-spacing:3px;
+}
+
+.contact-form i.fa{
+  /* color: red; */
+  /* color: #fff; */
+  font-size: 22px; 
+  padding: 3%;
+  background-color: none;
+  border-radius: 80%;
+  margin: 2%;
+  /* border: 2px solid #fff; */
+  cursor: pointer;
+  border:2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+.from-section{
+  text-align: end;
+}
+
+.contact-form i.fa:hover{
+  cursor: pointer;
+  border:2px solid white;
+  color: white;
+}
+ 
+  .contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+     }
+  
+  .form-info{
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+  }
+  input{
+    padding: 10px;
+    margin:10px;
+    width: 70%;
+    background-color:rgba(136, 133, 133, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline:none;
+  }
+
+
+  input::placeholder{
+    color: white;
+  }
+
+   textarea{
+  padding: 10px;
+  margin: 10px;     
+  width: 70%;
+  background-color:rgba(136, 133, 133, 0.5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline:none;
+ }
+ textarea::placeholder{
+   color: white;
+ }
+ 
+  
+
+  .submit{
+  width: 30%;
+  background: none;
+  margin-right: 10px;
+  padding: 4px;
+  outline: none;
+   /* border: 1px solid #fff;
+  color: #fff; */
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  letter-spacing: 3px;
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+  border:2px solid rgb(190, 190, 190);
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: rgb(190, 190, 190);
+ 
+ }
+
+ .submit:hover{
+       border: 1px solid #ffff;
+  color: #ffff;
+  cursor: pointer;
+ }
+
+    /* media queries */
+@media (max-width: 768px){
+
+#contact-section .contact-form{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #contact-section .submit{
+
+    width: 60%;
+  }
+  #body-details{
+    font-size: 20px;
+    padding-top: 265px;
+    text-align: center;
+    padding-right:0px;
+    margin-left:15px;
+   
+  }
+  .sub-title{
+    font-size: 10px !important;
+  }
+
+}
+
