@@ -205,7 +205,6 @@ label #cancel{
 #contact-section .container h2{
   text-align: center;
    text-decoration: underline;
-    /* text-decoration-color:red; */
     text-underline-position: under;
     color: rgb(238, 235, 235);
     letter-spacing: 2px;
@@ -237,14 +236,11 @@ label #cancel{
 }
 
 .contact-form i.fa{
-  /* color: red; */
-  /* color: #fff; */
   font-size: 22px; 
   padding: 3%;
   background-color: none;
   border-radius: 80%;
   margin: 2%;
-  /* border: 2px solid #fff; */
   cursor: pointer;
   border:2px solid rgb(190, 190, 190);
   color: rgb(190, 190, 190);
